@@ -76,7 +76,7 @@ class AppCard extends StatelessWidget {
                 const SizedBox(width: 20),
                 Text(
                   text2, // Pass the text dynamically, it should be parameterized
-                  style: TextStyle(color: AppColors1.font),
+                  style: const TextStyle(color: AppColors1.font),
                 ),
               ],
             ),

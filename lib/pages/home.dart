@@ -3,7 +3,6 @@ import 'package:flutter_potifolio/app_styles.dart';
 import 'package:flutter_potifolio/colors.dart';
 import 'package:flutter_potifolio/components/app_bar.dart';
 import 'package:flutter_potifolio/components/app_card.dart';
-import 'package:flutter_potifolio/components/bottom_nav.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,8 +18,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "I am Nzayisenga Emmanuel UX/UI designer"
-                "and web developer",
+                "I am Nzayisenga Emmanuel UX/UI designer and web developer",
                 style: TextStyle(
                   fontSize: AppStyles.fontsize1,
                   fontFamily: "Outfit",
@@ -28,8 +26,10 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              Image.asset(
-                "assets/images/keen.png",
+              Center(
+                child: Image.asset(
+                  "assets/images/keen.png",
+                ),
               ),
               const SizedBox(height: 28),
               const Text(
@@ -143,7 +143,6 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: const BottomNav(),
     );
   }
 }
