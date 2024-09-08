@@ -8,6 +8,6 @@ class AppColors1 {
   static const Color color3 = Color(0xff44D2FD);
   static const Color color4 = Color(0xff2E9D2E);
 
-  static const Color background = Color(0xFF181E41); // Added proper hex prefix
-  static const Color cardBackground = Color(0xFF01062E); // Fixed the hex format
+  static const Color background = Color(0xFF000000); // Added proper hex prefix
+  static const Color cardBackground = Color(0xFF2a2a2a); // Fixed the hex format
 }

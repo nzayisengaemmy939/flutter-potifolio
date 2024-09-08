@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_potifolio/colors.dart';
+import 'package:flutter_potifolio/config/app_route.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String name; // Name is required now
@@ -12,7 +13,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: AppColors1.cardBackground,
+      backgroundColor: AppColors1.background,
       foregroundColor: AppColors1.font2,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -38,7 +39,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             width: 100,
             height: 30,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: (
+               
+              ) {
+                 Navigator.of(context).pushNamed(AppRoute.login);
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors1.cardBackground,
                 foregroundColor: AppColors1.font2,

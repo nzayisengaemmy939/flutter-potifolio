@@ -29,7 +29,7 @@ class AboutMe extends StatelessWidget {
                 " My goal is to create seamless, high-performance"
                 " applications across web and mobile platforms.",
                 style: TextStyle(
-                    fontSize: AppStyles.fontsize3, color: AppColors1.font),
+                    fontSize: AppStyles.fontsize3,fontFamily:'Outfit', color: AppColors1.font),
                 textAlign: TextAlign.justify,
               ),
               const SizedBox(height: 10),
@@ -67,8 +67,8 @@ class AboutMe extends StatelessWidget {
                         Positioned(
                           top: 10,
                           left: 50,
-                          child: Image.asset("assets/images/keen.png"),
                           height: 250,
+                          child: Image.asset("assets/images/keen.png"),
                         ),
                       ],
                     ),

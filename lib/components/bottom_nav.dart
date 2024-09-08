@@ -1,7 +1,12 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter_potifolio/colors.dart';
 import 'package:flutter_potifolio/pages/about_me.dart';
+import 'package:flutter_potifolio/pages/contact_us.dart';
+import 'package:flutter_potifolio/pages/hire_me.dart';
 import 'package:flutter_potifolio/pages/home.dart';
+import 'package:flutter_potifolio/pages/services.dart';
 
 
 class BottomNav extends StatefulWidget {
@@ -17,11 +22,12 @@ class _BottomNavState extends State<BottomNav> {
   // Pages for each BottomNav item
   final List<Widget> _pages = [
     const HomePage(),
-  const Center(child: Text("mmmmmmmmmmmm"),),
+  const Services(),
   const AboutMe(),
-    const Center(child: Text("mmmmmmmmmmmm")),
-     const Center(child: Text("mmmmmmmmmmmm"),
-    )
+    const HireMe(),
+     const ContactUs(),
+     
+    
   ];
 
   @override
@@ -30,7 +36,7 @@ class _BottomNavState extends State<BottomNav> {
       body: _pages[_currentIndex],  // Display the selected page
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,  // Track selected index
-        backgroundColor: AppColors1.cardBackground,
+        backgroundColor: AppColors1.background,
         type: BottomNavigationBarType.fixed,
        selectedItemColor: const Color(0xff1877F2),  // Color for selected item
         unselectedItemColor: AppColors1.font,
